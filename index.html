@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fuzzy+Bubbles:wght@400;700&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id = "container">
+        <input type="text" id = "city-input"> 
+        <button id = "check-btn"><img src="images/search.png" id="search-img"></button><br>
+        <select id="unit-select" onchange="checkWeather()">
+            <option value="imperial">Imperial</option>
+            <option value ="metric">Metric</option>
+        </select>
+        <h2 id="error-msg"></h2>
+        <div id="pic"></div>
+        <h1 id="city-title"></h1>
+        <h1 id="temperature"></h1>
+        <h2 id="description"></h2>
+        <h3 id="highlow"></h3>
+        <div id="humid-wind">
+            <h4 id="humidity"></h4>
+            <h4 id="wind"></h4>
+        </div>
+
+    </div>
+<script src="scripts.js"></script>
+</body>
+</html>
